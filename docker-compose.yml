@@ -1,0 +1,19 @@
+services:
+  api:
+    image: rinkp/latex-ocr:3.11-slim
+    build:
+      dockerfile: Dockerfile-api
+      context: .
+      target: api
+    expose:
+      - 8502
+  frontend:
+    image: rinkp/latex-ocr-frontend:3.11-slim
+    build:
+      dockerfile: Dockerfile-frontend
+      context: .
+      target: frontend
+    environment:
+      - LATEXOCR_BACKEND=http://api:8502
+    ports:
+      - 8501:8501

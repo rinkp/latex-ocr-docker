@@ -1,0 +1,23 @@
+[browser]
+gatherUsageStats = false
+# serverPort = 8501
+# serverAddress = "localhost"
+
+[client]
+# For production, we hide error details
+showErrorDetails = false
+toolbarMode = "minimal"
+
+[server]
+fileWatcherType = "none"
+headless = true
+runOnSave = false
+# port = 8501
+enableCORS = true
+enableXsrfProtection = true
+maxUploadSize = 10
+enableStaticServing = false
+
+[theme]
+base = "dark"
+primarycolor = "#512DA8"

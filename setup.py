@@ -15,7 +15,6 @@ gui = [
     'screeninfo',
 ]
 api = [
-    'streamlit>=1.8.1',
     'fastapi>=0.75.2',
     'uvicorn[standard]',
     'python-multipart'
@@ -61,7 +60,6 @@ setuptools.setup(
         'transformers>=4.18.0',
         'tokenizers>=0.13.0',
         'numpy>=1.19.5',
-        'Pillow>=9.1.0',
         'PyYAML>=5.4.1',
         'pandas>=1.0.0',
         'timm==0.5.4',
